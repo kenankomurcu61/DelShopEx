@@ -1,0 +1,422 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2195A6F-D5CD-4920-A0AE-9D17618DF1A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DelShopEx</RootNamespace>
+    <AssemblyName>DelShopEx</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\vendor.css" />
+    <Content Include="assets\css\vendor.min.css" />
+    <Content Include="assets\css\vendor\bootstrap.min.css" />
+    <Content Include="assets\css\vendor\flaticon.css" />
+    <Content Include="assets\css\vendor\fontawesome.css" />
+    <Content Include="assets\css\vendor\magnific-popup.css" />
+    <Content Include="assets\css\vendor\nice-select.css" />
+    <Content Include="assets\css\vendor\owl.carousel.min.css" />
+    <Content Include="assets\css\vendor\owl.theme.default.min.css" />
+    <Content Include="assets\css\vendor\style.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\icomoon.svg" />
+    <Content Include="assets\images\about\1.jpg" />
+    <Content Include="assets\images\about\2.jpg" />
+    <Content Include="assets\images\background\1.jpg" />
+    <Content Include="assets\images\background\2.jpg" />
+    <Content Include="assets\images\background\3.jpg" />
+    <Content Include="assets\images\background\layer-bottom.jpg" />
+    <Content Include="assets\images\background\layer-top.jpg" />
+    <Content Include="assets\images\background\map-pattern.png" />
+    <Content Include="assets\images\background\pattern-red.png" />
+    <Content Include="assets\images\background\pattern.png" />
+    <Content Include="assets\images\blog\author\1.jpg" />
+    <Content Include="assets\images\blog\author\2.jpg" />
+    <Content Include="assets\images\blog\author\3.jpg" />
+    <Content Include="assets\images\blog\author\4.jpg" />
+    <Content Include="assets\images\blog\grid\1.jpg" />
+    <Content Include="assets\images\blog\grid\2.jpg" />
+    <Content Include="assets\images\blog\grid\3.jpg" />
+    <Content Include="assets\images\blog\grid\4.jpg" />
+    <Content Include="assets\images\blog\grid\5.jpg" />
+    <Content Include="assets\images\blog\grid\6.jpg" />
+    <Content Include="assets\images\blog\sidebar\about.jpg" />
+    <Content Include="assets\images\blog\sidebar\post-1.jpg" />
+    <Content Include="assets\images\blog\sidebar\post-2.jpg" />
+    <Content Include="assets\images\blog\sidebar\reservation.jpg" />
+    <Content Include="assets\images\blog\standard\1.jpg" />
+    <Content Include="assets\images\blog\standard\2.jpg" />
+    <Content Include="assets\images\blog\standard\3.jpg" />
+    <Content Include="assets\images\blog\thumb\next.jpg" />
+    <Content Include="assets\images\blog\thumb\prev.jpg" />
+    <Content Include="assets\images\careers\1.png" />
+    <Content Include="assets\images\careers\2.png" />
+    <Content Include="assets\images\careers\3.png" />
+    <Content Include="assets\images\careers\4.png" />
+    <Content Include="assets\images\careers\5.png" />
+    <Content Include="assets\images\careers\6.png" />
+    <Content Include="assets\images\chart\chart-2.png" />
+    <Content Include="assets\images\chart\Chart-Card.jpg" />
+    <Content Include="assets\images\clients\1.png" />
+    <Content Include="assets\images\clients\2.png" />
+    <Content Include="assets\images\clients\3.png" />
+    <Content Include="assets\images\clients\4.png" />
+    <Content Include="assets\images\clients\5.png" />
+    <Content Include="assets\images\clients\6.png" />
+    <Content Include="assets\images\contact\1.jpg" />
+    <Content Include="assets\images\counters\1.jpg" />
+    <Content Include="assets\images\cta\1.jpg" />
+    <Content Include="assets\images\cta\2.jpg" />
+    <Content Include="assets\images\cta\3.jpg" />
+    <Content Include="assets\images\favicon\favicon.png" />
+    <Content Include="assets\images\logo.jpg" />
+    <Content Include="assets\images\logo\logo-dark.png" />
+    <Content Include="assets\images\logo\logo-light.png" />
+    <Content Include="assets\images\page-titles\1.jpg" />
+    <Content Include="assets\images\page-titles\10.jpg" />
+    <Content Include="assets\images\page-titles\11.jpg" />
+    <Content Include="assets\images\page-titles\12.jpg" />
+    <Content Include="assets\images\page-titles\13.jpg" />
+    <Content Include="assets\images\page-titles\14.jpg" />
+    <Content Include="assets\images\page-titles\15.jpg" />
+    <Content Include="assets\images\page-titles\16.jpg" />
+    <Content Include="assets\images\page-titles\17.jpg" />
+    <Content Include="assets\images\page-titles\2.jpg" />
+    <Content Include="assets\images\page-titles\3.jpg" />
+    <Content Include="assets\images\page-titles\4.jpg" />
+    <Content Include="assets\images\page-titles\5.jpg" />
+    <Content Include="assets\images\page-titles\6.jpg" />
+    <Content Include="assets\images\page-titles\7.jpg" />
+    <Content Include="assets\images\page-titles\8.jpg" />
+    <Content Include="assets\images\page-titles\9.jpg" />
+    <Content Include="assets\images\services\1.jpg" />
+    <Content Include="assets\images\services\2.jpg" />
+    <Content Include="assets\images\services\3.jpg" />
+    <Content Include="assets\images\services\4.jpg" />
+    <Content Include="assets\images\services\5.jpg" />
+    <Content Include="assets\images\services\6.jpg" />
+    <Content Include="assets\images\signature\1.png" />
+    <Content Include="assets\images\signature\2.png" />
+    <Content Include="assets\images\sliders\1.jpg" />
+    <Content Include="assets\images\sliders\2.jpg" />
+    <Content Include="assets\images\sliders\3.jpg" />
+    <Content Include="assets\images\sliders\4.jpg" />
+    <Content Include="assets\images\sliders\5.jpg" />
+    <Content Include="assets\images\sliders\arrow-left-light.png" />
+    <Content Include="assets\images\sliders\arrow-right-light.png" />
+    <Content Include="assets\images\sliders\slider-1.jpg" />
+    <Content Include="assets\images\sliders\slider-1.png" />
+    <Content Include="assets\images\sliders\slider-2.jpg" />
+    <Content Include="assets\images\sliders\slider-2.png" />
+    <Content Include="assets\images\sliders\slider-3.jpg" />
+    <Content Include="assets\images\sliders\slider-4.jpg" />
+    <Content Include="assets\images\team\1.jpg" />
+    <Content Include="assets\images\team\2.jpg" />
+    <Content Include="assets\images\team\3.jpg" />
+    <Content Include="assets\images\team\4.jpg" />
+    <Content Include="assets\images\team\5.jpg" />
+    <Content Include="assets\images\team\6.jpg" />
+    <Content Include="assets\images\team\7.jpg" />
+    <Content Include="assets\images\testimonial\1.png" />
+    <Content Include="assets\images\testimonial\2.png" />
+    <Content Include="assets\images\testimonial\3.jpg" />
+    <Content Include="assets\images\testimonial\3.png" />
+    <Content Include="assets\images\testimonial\4.jpg" />
+    <Content Include="assets\images\testimonial\5.jpg" />
+    <Content Include="assets\images\video\1.jpg" />
+    <Content Include="assets\images\video\2.jpg" />
+    <Content Include="assets\images\video\3.jpg" />
+    <Content Include="assets\images\video\4.jpg" />
+    <Content Include="assets\images\work\full\1.jpg" />
+    <Content Include="assets\images\work\full\2.jpg" />
+    <Content Include="assets\images\work\full\3.jpg" />
+    <Content Include="assets\images\work\full\4.jpg" />
+    <Content Include="assets\images\work\full\5.jpg" />
+    <Content Include="assets\images\work\full\6.jpg" />
+    <Content Include="assets\images\work\grid\1.jpg" />
+    <Content Include="assets\images\work\grid\2.jpg" />
+    <Content Include="assets\images\work\grid\3.jpg" />
+    <Content Include="assets\images\work\grid\4.jpg" />
+    <Content Include="assets\images\work\grid\5.jpg" />
+    <Content Include="assets\images\work\grid\6.jpg" />
+    <Content Include="assets\js\functions.js" />
+    <Content Include="assets\js\vendor.js" />
+    <Content Include="assets\js\vendor.min.js" />
+    <Content Include="assets\js\vendor\bootstrap.min.js" />
+    <Content Include="assets\js\vendor\countdown.js" />
+    <Content Include="assets\js\vendor\imagesLoaded.js" />
+    <Content Include="assets\js\vendor\isotope.pkgd.min.js" />
+    <Content Include="assets\js\vendor\jquery-3.4.1.min.js" />
+    <Content Include="assets\js\vendor\jquery-migrate-1.4.1.min.js" />
+    <Content Include="assets\js\vendor\jquery.ajaxchimp.min.js" />
+    <Content Include="assets\js\vendor\jquery.counterup.min.js" />
+    <Content Include="assets\js\vendor\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\vendor\jquery.nice-select.min.js" />
+    <Content Include="assets\js\vendor\jquery.validate.min.js" />
+    <Content Include="assets\js\vendor\jquery.waypoints.min.js" />
+    <Content Include="assets\js\vendor\owl.carousel.min.js" />
+    <Content Include="assets\js\vendor\owl.carousel2.thumbs.min.js" />
+    <Content Include="assets\js\vendor\popper.min.js" />
+    <Content Include="assets\php\contact.php" />
+    <Content Include="assets\php\PHPMailer\get_oauth_token.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-af.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ar.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-az.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ba.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-be.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-bg.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ca.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ch.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-cs.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-da.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-de.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-el.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-eo.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-es.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-et.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-fa.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-fi.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-fo.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-fr.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-gl.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-he.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-hi.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-hr.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-hu.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-hy.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-id.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-it.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ja.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ka.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ko.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-lt.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-lv.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-mg.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ms.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-nb.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-nl.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-pl.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-pt.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-pt_br.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ro.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-ru.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-sk.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-sl.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-sr.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-sr_latn.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-sv.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-tl.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-tr.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-uk.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-vi.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-zh.php" />
+    <Content Include="assets\php\PHPMailer\language\phpmailer.lang-zh_cn.php" />
+    <Content Include="assets\php\PHPMailer\src\Exception.php" />
+    <Content Include="assets\php\PHPMailer\src\OAuth.php" />
+    <Content Include="assets\php\PHPMailer\src\PHPMailer.php" />
+    <Content Include="assets\php\PHPMailer\src\POP3.php" />
+    <Content Include="assets\php\PHPMailer\src\SMTP.php" />
+    <Content Include="blog-grid-fullwidth.html" />
+    <Content Include="blog-single-sidebar.html" />
+    <Content Include="case-studies-grid.html" />
+    <Content Include="case-studies-standard.html" />
+    <Content Include="case-study-single.html" />
+    <Content Include="contact.html" />
+    <Content Include="faqs.html" />
+    <Content Include="find-location.html" />
+    <Content Include="home-classic.html" />
+    <Content Include="home-modern.html" />
+    <Content Include="index.html" />
+    <Content Include="industry-chemical.html" />
+    <Content Include="industry-food.html" />
+    <Content Include="industry-oil.html" />
+    <Content Include="industry-power.html" />
+    <Content Include="industry-retail.html" />
+    <Content Include="industry-science.html" />
+    <Content Include="page-about.html" />
+    <Content Include="page-awards.html" />
+    <Content Include="page-careers.html" />
+    <Content Include="page-core.html" />
+    <Content Include="page-gallery.html" />
+    <Content Include="page-locations.html" />
+    <Content Include="page-our-services.html" />
+    <Content Include="page-team.html" />
+    <Content Include="request-quote.html" />
+    <Content Include="service-air-freight.html" />
+    <Content Include="service-ocean-freight.html" />
+    <Content Include="service-packaging.html" />
+    <Content Include="service-road-freight.html" />
+    <Content Include="service-supply.html" />
+    <Content Include="service-warehouse.html" />
+    <Content Include="track-shipment.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\Flaticon.eot" />
+    <Content Include="assets\fonts\Flaticon.ttf" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon.woff" />
+    <Content Include="assets\php\PHPMailer\composer.json" />
+    <Content Include="assets\php\PHPMailer\LICENSE" />
+    <Content Include="assets\scss\base\_base.scss" />
+    <Content Include="assets\scss\base\_info.scss" />
+    <Content Include="assets\scss\base\_mixins.scss" />
+    <Content Include="assets\scss\base\_reset.scss" />
+    <Content Include="assets\scss\base\_vars.scss" />
+    <Content Include="assets\scss\layout\_accordion.scss" />
+    <Content Include="assets\scss\layout\_alert.scss" />
+    <Content Include="assets\scss\layout\_align.scss" />
+    <Content Include="assets\scss\layout\_background.scss" />
+    <Content Include="assets\scss\layout\_backtop.scss" />
+    <Content Include="assets\scss\layout\_blockquotes.scss" />
+    <Content Include="assets\scss\layout\_breadcrumb.scss" />
+    <Content Include="assets\scss\layout\_buttons.scss" />
+    <Content Include="assets\scss\layout\_color.scss" />
+    <Content Include="assets\scss\layout\_forms.scss" />
+    <Content Include="assets\scss\layout\_grid.scss" />
+    <Content Include="assets\scss\layout\_lists.scss" />
+    <Content Include="assets\scss\layout\_misc.scss" />
+    <Content Include="assets\scss\layout\_pagination.scss" />
+    <Content Include="assets\scss\layout\_tables.scss" />
+    <Content Include="assets\scss\layout\_tabs.scss" />
+    <Content Include="assets\scss\layout\_typography.scss" />
+    <Content Include="assets\scss\module\_404.scss" />
+    <Content Include="assets\scss\module\_about.scss" />
+    <Content Include="assets\scss\module\_action.scss" />
+    <Content Include="assets\scss\module\_awards.scss" />
+    <Content Include="assets\scss\module\_blog.scss" />
+    <Content Include="assets\scss\module\_careers.scss" />
+    <Content Include="assets\scss\module\_carousel.scss" />
+    <Content Include="assets\scss\module\_cases.scss" />
+    <Content Include="assets\scss\module\_clients.scss" />
+    <Content Include="assets\scss\module\_contact.scss" />
+    <Content Include="assets\scss\module\_counters.scss" />
+    <Content Include="assets\scss\module\_faq.scss" />
+    <Content Include="assets\scss\module\_features.scss" />
+    <Content Include="assets\scss\module\_footer.scss" />
+    <Content Include="assets\scss\module\_header.scss" />
+    <Content Include="assets\scss\module\_heading.scss" />
+    <Content Include="assets\scss\module\_hero.scss" />
+    <Content Include="assets\scss\module\_menu-max1200.scss" />
+    <Content Include="assets\scss\module\_menu-max991.scss" />
+    <Content Include="assets\scss\module\_menu-min992.scss" />
+    <Content Include="assets\scss\module\_menu.scss" />
+    <Content Include="assets\scss\module\_module.scss" />
+    <Content Include="assets\scss\module\_page-title.scss" />
+    <Content Include="assets\scss\module\_services.scss" />
+    <Content Include="assets\scss\module\_sidebar.scss" />
+    <Content Include="assets\scss\module\_team.scss" />
+    <Content Include="assets\scss\module\_testimonial.scss" />
+    <Content Include="assets\scss\module\_topbar.scss" />
+    <Content Include="assets\scss\module\_video.scss" />
+    <Content Include="assets\scss\module\_work.scss" />
+    <Content Include="assets\scss\style.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63428</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63428/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
