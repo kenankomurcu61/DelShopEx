@@ -119,6 +119,12 @@
     <Content Include="assets\images\clients\4.png" />
     <Content Include="assets\images\clients\5.png" />
     <Content Include="assets\images\clients\6.png" />
+    <Content Include="assets\images\clients\boyner.svg" />
+    <Content Include="assets\images\clients\DESA.svg" />
+    <Content Include="assets\images\clients\elle.svg" />
+    <Content Include="assets\images\clients\mango.svg" />
+    <Content Include="assets\images\clients\mavi.svg" />
+    <Content Include="assets\images\clients\trendyol-logo.svg" />
     <Content Include="assets\images\contact\1.jpg" />
     <Content Include="assets\images\counters\1.jpg" />
     <Content Include="assets\images\cta\1.jpg" />
@@ -158,6 +164,7 @@
     <Content Include="assets\images\sliders\3.jpg" />
     <Content Include="assets\images\sliders\4.jpg" />
     <Content Include="assets\images\sliders\5.jpg" />
+    <Content Include="assets\images\sliders\842216_arrows_512x512.png" />
     <Content Include="assets\images\sliders\arrow-left-light.png" />
     <Content Include="assets\images\sliders\arrow-right-light.png" />
     <Content Include="assets\images\sliders\slider-1.jpg" />

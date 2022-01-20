@@ -210,7 +210,7 @@ textarea {
 
 section {
 	background-color: #ffffff;
-	padding         : 130px 0;
+	padding         : 20px 0;
 	overflow        : hidden;
 }
 
@@ -8666,7 +8666,7 @@ ul.dropdown-menu>li.has-dropdown>a:before {
 
 @media screen and (min-width: 992px) {
 	.about.about-2 {
-		padding-top: 130px;
+		padding-top: 20px;
 	}
 }
 
@@ -8917,7 +8917,7 @@ ul.dropdown-menu>li.has-dropdown>a:before {
 		#Features
 \*------------------------------------*/
 .features {
-	padding-top   : 440px;
+	padding-top   : 100px;
 	padding-bottom: 80px;
 }
 
@@ -10795,7 +10795,7 @@ ul.dropdown-menu>li.has-dropdown>a:before {
 
 /* Cases Clients */
 .cases-clients {
-	padding-top          : 343px;
+	padding-top          : 40px;
 	padding-bottom       : 25px;
 	background-image     : url("../images/background/pattern.png");
 	background-attachment: fixed;
