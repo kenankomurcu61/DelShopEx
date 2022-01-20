@@ -19,6 +19,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,6 +61,7 @@
     <Content Include="assets\css\style.css" />
     <Content Include="assets\css\vendor.css" />
     <Content Include="assets\css\vendor.min.css" />
+    <Content Include="assets\css\vendor\Bireysel.css" />
     <Content Include="assets\css\vendor\bootstrap.min.css" />
     <Content Include="assets\css\vendor\flaticon.css" />
     <Content Include="assets\css\vendor\fontawesome.css" />
@@ -68,12 +70,14 @@
     <Content Include="assets\css\vendor\owl.carousel.min.css" />
     <Content Include="assets\css\vendor\owl.theme.default.min.css" />
     <Content Include="assets\css\vendor\style.css" />
+    <Content Include="assets\css\vendor\TimeLine.css" />
     <Content Include="assets\fonts\fa-brands-400.svg" />
     <Content Include="assets\fonts\fa-regular-400.svg" />
     <Content Include="assets\fonts\fa-solid-900.svg" />
     <Content Include="assets\fonts\icomoon.svg" />
     <Content Include="assets\images\about\1.jpg" />
     <Content Include="assets\images\about\2.jpg" />
+    <Content Include="assets\images\about\2.png" />
     <Content Include="assets\images\background\1.jpg" />
     <Content Include="assets\images\background\2.jpg" />
     <Content Include="assets\images\background\3.jpg" />
