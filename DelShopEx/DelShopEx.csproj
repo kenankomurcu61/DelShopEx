@@ -130,6 +130,7 @@
     <Content Include="assets\images\cta\1.jpg" />
     <Content Include="assets\images\cta\2.jpg" />
     <Content Include="assets\images\cta\3.jpg" />
+    <Content Include="assets\images\faq.jpeg" />
     <Content Include="assets\images\favicon\favicon.png" />
     <Content Include="assets\images\logo.jpg" />
     <Content Include="assets\images\logo\logo-dark.png" />
