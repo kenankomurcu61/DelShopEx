@@ -63,6 +63,7 @@
     <Content Include="assets\css\vendor.min.css" />
     <Content Include="assets\css\vendor\Bireysel.css" />
     <Content Include="assets\css\vendor\bootstrap.min.css" />
+    <Content Include="assets\css\vendor\Customers.css" />
     <Content Include="assets\css\vendor\flaticon.css" />
     <Content Include="assets\css\vendor\fontawesome.css" />
     <Content Include="assets\css\vendor\magnific-popup.css" />
@@ -135,6 +136,7 @@
     <Content Include="assets\images\logo.jpg" />
     <Content Include="assets\images\logo\logo-dark.png" />
     <Content Include="assets\images\logo\logo-light.png" />
+    <Content Include="assets\images\magazalar.jpg" />
     <Content Include="assets\images\page-titles\1.jpg" />
     <Content Include="assets\images\page-titles\10.jpg" />
     <Content Include="assets\images\page-titles\11.jpg" />
