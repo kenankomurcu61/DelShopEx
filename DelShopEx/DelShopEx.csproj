@@ -136,6 +136,7 @@
     <Content Include="assets\images\logo.jpg" />
     <Content Include="assets\images\logo\logo-dark.png" />
     <Content Include="assets\images\logo\logo-light.png" />
+    <Content Include="assets\images\logo\logo.png" />
     <Content Include="assets\images\magazalar.jpg" />
     <Content Include="assets\images\page-titles\1.jpg" />
     <Content Include="assets\images\page-titles\10.jpg" />
